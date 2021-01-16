@@ -93,7 +93,7 @@ class KindleParser:
 							location = (location_start, location_end)
 
 						# parse datetime
-						date_time = datetime.datetime.strptime(position_match.group(5), 'Added on %A, %B %d, %Y %I:%M:%S %p')
+						date_time = datetime.datetime.strptime(position_match.group(5), 'Added on %A, %d %B %Y %H:%M:%S')
 
 				# parse clipping content
 				if clip_line == 3:
